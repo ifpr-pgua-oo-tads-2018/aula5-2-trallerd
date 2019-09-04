@@ -3,11 +3,13 @@ package model;
 import java.io.Serializable;
 
 public class Jogador implements Serializable {
+
     private String nome;
     private String email;
     private String senha;
     private long nJogadas;
     private long pontos;
+    private int id;
 
     public String getNome() {
         return nome;
@@ -47,5 +49,17 @@ public class Jogador implements Serializable {
 
     public void setPontos(long pontos) {
         this.pontos = pontos;
+    }
+
+    public int getId() {return id; }
+
+    public void setId(int id) {this.id = id;}
+
+    @Override
+    public String toString() {
+        return "Jogador{" +
+                "nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }

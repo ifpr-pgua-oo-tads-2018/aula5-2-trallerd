@@ -6,11 +6,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.JogoController"
-            prefHeight="400.0" prefWidth="600.0">
+<?import javafx.geometry.Insets?>
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.161-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Jogo">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+    <top>
 
-
-
-</AnchorPane>
+    </top>
+    <center>
+        <ListView fx:id="ltvJogadores"/>
+    </center>
+</BorderPane>

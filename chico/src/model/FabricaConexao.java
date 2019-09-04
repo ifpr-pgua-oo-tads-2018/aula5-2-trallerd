@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class FabricaConexao {
 
     private static int MAX_CONNECTIONS=5;
-    private static String CON_STRING="jdbc:sqlite:Chico-game.sqlite";
+    private static String CON_STRING="jdbc:sqlite:ChicoGame.sqlite";
 
     private static Connection[] pool;
 

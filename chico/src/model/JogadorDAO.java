@@ -5,4 +5,7 @@ import java.util.List;
 
 public interface JogadorDAO extends DAO<Jogador> {
 
+
+
+    List<Jogador> buscaAtributo(JogadorAtributoBusca atributo, Object email) throws SQLException;
 }
